@@ -20,9 +20,8 @@ android {
         }
     }
 
-    viewBinding{
-        enabled=true
-    }
+    android.buildFeatures.viewBinding = true
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -58,5 +57,12 @@ dependencies {
 
     //RxAndroid
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    // 多类型的recyclerview
+    implementation('me.drakeet.multitype:multitype:3.4.4', {
+        exclude group: 'com.android.support'
+    })
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
 }

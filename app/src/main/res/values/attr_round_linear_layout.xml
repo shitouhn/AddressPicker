@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆角RoundLinearLayout-->
+    <declare-styleable name="RoundLinearLayout">
+        <attr name="radius"/>
+        <attr name="topLeftRadius"/>
+        <attr name="topRightRadius"/>
+        <attr name="bottomLeftRadius"/>
+        <attr name="bottomRightRadius"/>
+    </declare-styleable>
+</resources>
